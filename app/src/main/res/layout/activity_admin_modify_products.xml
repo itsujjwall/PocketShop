@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Admin.AdminModifyProductsActivity"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="15dp"
+    android:backgroundTint="@color/white"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <EditText
+            android:id="@+id/modify_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            android:hint="Product Name"
+            android:textColorHint="@color/grey"
+            android:background="@drawable/input_types"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/modify_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/modify_input_name"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="4dp"/>
+
+        <EditText
+            android:id="@+id/modify_input_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            android:hint="Product Price"
+            android:textColorHint="@color/grey"
+            android:background="@drawable/input_types"
+            android:layout_below="@id/modify_image"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/modify_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/modify_input_price"
+            android:hint="Product Description"
+            android:textColorHint="@color/grey"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:background="@drawable/input_types"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            />
+
+        <Button
+            android:id="@+id/modify_btnn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/modify_description"
+            android:textAlignment="center"
+            android:text="Apply Changes"
+            android:textAllCaps="false"
+            android:background="@color/colorAccent"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="8dp"
+            />
+        <Button
+            android:id="@+id/delete_product_btnn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/modify_btnn"
+            android:textAlignment="center"
+            android:text="Delete Product"
+            android:textAllCaps="false"
+            android:background="@drawable/buttons"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

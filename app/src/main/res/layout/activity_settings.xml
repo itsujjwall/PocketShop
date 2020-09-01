@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Buyers.SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/close_tv_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Close"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/save_tv_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/app_bar_settings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_change_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/settings_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@id/settings_profile_image"
+        android:src="@drawable/ic_menu_camera" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image_change_btn"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp">
+
+        <EditText
+            android:id="@+id/setting_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="8dp"
+            android:drawableEnd="@drawable/ic_edit_black_24dp"
+            android:hint="   Name"
+            android:inputType="text"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/colorPrimary"
+            android:textStyle="italic"
+            tools:ignore="PrivateResource" />
+
+        <EditText
+            android:id="@+id/setting_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="8dp"
+            android:drawableEnd="@drawable/ic_edit_black_24dp"
+            android:hint="   Phone"
+            android:inputType="number"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/colorPrimary"
+            android:textStyle="italic"
+            tools:ignore="PrivateResource,TextFields" />
+
+
+        <EditText
+            android:id="@+id/setting_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="8dp"
+            android:drawableEnd="@drawable/ic_edit_black_24dp"
+            android:hint="   Password"
+            android:inputType="textPassword"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/colorPrimary"
+            android:textStyle="italic"
+            tools:ignore="PrivateResource" />
+
+
+        <EditText
+            android:id="@+id/setting_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:drawableEnd="@drawable/ic_edit_black_24dp"
+            android:hint="   Address"
+            android:inputType="text"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/colorPrimary"
+            android:textStyle="italic"
+            tools:ignore="PrivateResource" />
+
+        <Button
+            android:id="@+id/setting_security_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:drawableEnd="@drawable/ic_edit_black_24dp"
+            android:text="Set Security Question"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:background="@drawable/buttons"
+            tools:ignore="PrivateResource" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

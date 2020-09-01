@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    app:cardElevation="16dp"
+    app:cardCornerRadius="10dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F14E85"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/product_name_tv"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginStart="2dp"
+            android:gravity="center_vertical"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/product_quantity_tv"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="6dp"
+            android:text="Product Quantity"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/product_price_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/product_name_tv"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

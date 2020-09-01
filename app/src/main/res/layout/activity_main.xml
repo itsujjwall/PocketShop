@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    tools:context=".Buyers.MainActivity">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo_main" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
+        android:layout_centerInParent="true"
+        android:text="Here to make your life easier, A change you can see."
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/main_page_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_page_login"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/input_types"
+        android:padding="14dp"
+        android:text="Join Now"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/main_page_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/buttons"
+        android:layout_above="@+id/want_to_seller"
+        android:padding="14dp"
+        android:text="Already Have an Account? Login"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Want to become a Seller?"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="viewEnd"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/want_to_seller"/>
+
+
+
+</RelativeLayout>

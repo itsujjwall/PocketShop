@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Buyers.CartActivity">
+
+    <RelativeLayout
+        android:id="@+id/total_price_RL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/total_price_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowRadius="@integer/config_navAnimTime"
+            android:layout_marginTop="10dp"
+            android:text="Total Price : "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message_after_order_placed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:layout_centerVertical="true"
+        android:text="Congratulation, your order has been placed Successfully.Soon You will received your order Confirmation."
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list_ca"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/next_btn_ca"
+        android:layout_below="@+id/total_price_RL" />
+
+
+    <Button
+        android:id="@+id/next_btn_ca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/buttons"
+        android:elevation="5dp"
+        android:text="Next"
+        android:textSize="22sp"
+        />
+
+</RelativeLayout>
